@@ -1,19 +1,24 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
-import 'package:vid_conference/resources/jitsi_meet_methods.dart';
-import 'package:vid_conference/widgets/home_meeting_button.dart';
+import 'package:zoom_clone_tutorial/resources/agora_meet_methods.dart';
+import 'package:zoom_clone_tutorial/utils/firestore_methods.dart';
+import 'package:zoom_clone_tutorial/utils/auth_methods.dart';
+import 'package:agora_rtc_engine/rtc_engine.dart';
 
 class MeetingScreen extends StatelessWidget {
   MeetingScreen({Key? key}) : super(key: key);
 
-  final JitsiMeetMethods _jitsiMeetMethods = JitsiMeetMethods();
+  final AgoraMeetMethods _agoraMeetMethods = AgoraMeetMethods();
 
   createNewMeeting() async {
-    var random = Random();
-    String roomName = (random.nextInt(10000000) + 10000000).toString();
-    _jitsiMeetMethods.createMeeting(
-        roomName: roomName, isAudioMuted: true, isVideoMuted: true);
+    // Generate room name, mute settings, etc.
+    // ...
+
+    _agoraMeetMethods.createMeeting(
+      roomName: roomName,
+      isAudioMuted: true,
+      isVideoMuted: true,
+      username: 'John', // Optional custom username
+    );
   }
 
   joinMeeting(BuildContext context) {
@@ -64,3 +69,4 @@ class MeetingScreen extends StatelessWidget {
     );
   }
 }
+
