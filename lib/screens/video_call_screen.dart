@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:jitsi_meet/jitsi_meet.dart';
-import 'package:vid_conference/resources/auth_methods.dart';
-import 'package:vid_conference/resources/jitsi_meet_methods.dart';
-import 'package:vid_conference/utils/colors.dart';
-import 'package:vid_conference/widgets/meeting_option.dart';
+import 'package:agora_rtc_engine/rtc_engine.dart';
+import 'package:zoom_clone_tutorial/resources/auth_methods.dart';
+import 'package:zoom_clone_tutorial/resources/agora_meet_methods.dart';
+import 'package:zoom_clone_tutorial/utils/colors.dart';
+import 'package:zoom_clone_tutorial/widgets/meeting_option.dart';
 
 class VideoCallScreen extends StatefulWidget {
   const VideoCallScreen({Key? key}) : super(key: key);
@@ -16,7 +16,7 @@ class _VideoCallScreenState extends State<VideoCallScreen> {
   final AuthMethods _authMethods = AuthMethods();
   late TextEditingController meetingIdController;
   late TextEditingController nameController;
-  final JitsiMeetMethods _jitsiMeetMethods = JitsiMeetMethods();
+  final AgoraMeetMethods _agoraMeetMethods = AgoraMeetMethods();
   bool isAudioMuted = true;
   bool isVideoMuted = true;
 
@@ -33,13 +33,11 @@ class _VideoCallScreenState extends State<VideoCallScreen> {
   void dispose() {
     super.dispose();
     meetingIdController.dispose();
-    nameController.dispose();
-    JitsiMeet.removeAllListeners();
   }
 
   _joinMeeting() {
-    _jitsiMeetMethods.createMeeting(
-      roomName: meetingIdController.text,
+    _agoraMeetMethods.createMeeting(
+      channelName: meetingIdController.text,
       isAudioMuted: isAudioMuted,
       isVideoMuted: isVideoMuted,
       username: nameController.text,
@@ -73,7 +71,7 @@ class _VideoCallScreenState extends State<VideoCallScreen> {
                 fillColor: secondaryBackgroundColor,
                 filled: true,
                 border: InputBorder.none,
-                hintText: 'Room ID',
+                hintText: 'Channel Name',
                 contentPadding: EdgeInsets.fromLTRB(16, 8, 0, 0),
               ),
             ),
@@ -135,3 +133,4 @@ class _VideoCallScreenState extends State<VideoCallScreen> {
     });
   }
 }
+
