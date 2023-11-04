@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:jitsi_meet/jitsi_meet.dart';
-import 'package:vid_conference/resources/auth_methods.dart';
-import 'package:vid_conference/resources/jitsi_meet_methods.dart';
-import 'package:vid_conference/utils/colors.dart';
-import 'package:vid_conference/widgets/meeting_option.dart';
+import 'package:astraLink/resources/auth_methods.dart';
+import 'package:astraLink/resources/jitsi_meet_methods.dart';
+import 'package:astraLink/utils/colors.dart';
+import 'package:astraLink/widgets/meeting_option.dart';
 
 class VideoCallScreen extends StatefulWidget {
   const VideoCallScreen({Key? key}) : super(key: key);

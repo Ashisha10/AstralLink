@@ -1,7 +1,7 @@
 import 'package:jitsi_meet/feature_flag/feature_flag.dart';
 import 'package:jitsi_meet/jitsi_meet.dart';
-import 'package:vid_conference/resources/firestore_methods.dart';
-import 'package:vid_conference/resources/auth_methods.dart';
+import 'package:astraLink/resources/firestore_methods.dart';
+import 'package:astraLink/resources/auth_methods.dart';
 
 class JitsiMeetMethods {
   final AuthMethods _authMethods = AuthMethods();

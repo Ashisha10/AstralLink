@@ -1,10 +1,10 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:vid_conference/resources/auth_methods.dart';
-import 'package:vid_conference/screens/home_screen.dart';
-import 'package:vid_conference/screens/login_screen.dart';
-import 'package:vid_conference/screens/video_call_screen.dart';
-import 'package:vid_conference/utils/colors.dart';
+import 'package:astraLink/resources/auth_methods.dart';
+import 'package:astraLink/screens/home_screen.dart';
+import 'package:astraLink/screens/login_screen.dart';
+import 'package:astraLink/screens/video_call_screen.dart';
+import 'package:astraLink/utils/colors.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

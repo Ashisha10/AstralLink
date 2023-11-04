@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:zoom_clone_tutorial/resources/agora_meet_methods.dart';
+import r'package:AstralLink/lib/resources/agora_meet_methods.dart';
 import 'package:zoom_clone_tutorial/utils/firestore_methods.dart';
 import 'package:zoom_clone_tutorial/utils/auth_methods.dart';
 import 'package:agora_rtc_engine/rtc_engine.dart';
@@ -69,4 +69,3 @@ class MeetingScreen extends StatelessWidget {
     );
   }
 }
-

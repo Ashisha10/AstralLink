@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "vid_conference" "\0"
+            VALUE "FileDescription", "astraLink" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "vid_conference" "\0"
+            VALUE "InternalName", "astraLink" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2023 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "vid_conference.exe" "\0"
-            VALUE "ProductName", "vid_conference" "\0"
+            VALUE "OriginalFilename", "astraLink.exe" "\0"
+            VALUE "ProductName", "astraLink" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:vid_conference/resources/auth_methods.dart';
-import 'package:vid_conference/widgets/custom_button.dart';
+import 'package:astraLink/resources/auth_methods.dart';
+import 'package:astraLink/widgets/custom_button.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -20,7 +20,7 @@ class _LoginScreenState extends State<LoginScreen> {
         children: [
           const Text(
             'Start or join a meeting',
-            style: const TextStyle(
+            style: TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.bold,
             ),

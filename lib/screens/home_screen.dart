@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:vid_conference/resources/auth_methods.dart';
-import 'package:vid_conference/screens/history_meeting_screen.dart';
-import 'package:vid_conference/screens/meeting_screen.dart';
-import 'package:vid_conference/utils/colors.dart';
-import 'package:vid_conference/widgets/custom_button.dart';
+import 'package:astraLink/resources/auth_methods.dart';
+import 'package:astraLink/screens/history_meeting_screen.dart';
+import 'package:astraLink/screens/meeting_screen.dart';
+import 'package:astraLink/utils/colors.dart';
+import 'package:astraLink/widgets/custom_button.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);

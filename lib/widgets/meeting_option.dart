@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:vid_conference/utils/colors.dart';
+import 'package:astraLink/utils/colors.dart';
 
 class MeetingOption extends StatelessWidget {
   final String text;

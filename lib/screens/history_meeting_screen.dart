@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:vid_conference/resources/firestore_methods.dart';
-// import 'package:vid_conference/utils/colors.dart';
+import 'package:astraLink/resources/firestore_methods.dart';
+// import 'package:astraLink/utils/colors.dart';
 import 'package:intl/intl.dart';
 
 class HistoryMeetingScreen extends StatelessWidget {
